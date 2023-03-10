@@ -14,7 +14,7 @@ router.get("/survey", function (req, res) {
   }
 });
 
-router.get("/freelance", function (req, res) {
+router.get("/profile", function (req, res) {
   const { id } = req.query;
   const freelanceData = getFreelance(id);
   if (!freelanceData) {
